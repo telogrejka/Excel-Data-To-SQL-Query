@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Column to SQLValues", "Column to SQLValues\Column to SQLValues.csproj", "{72D1B895-0B3F-410E-AC41-6B4770CE0965}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Excel data to SQL Statement", "Column to SQLValues\Excel data to SQL Statement.csproj", "{72D1B895-0B3F-410E-AC41-6B4770CE0965}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,5 +18,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(Performance) = preSolution
+		HasPerformanceSessions = true
 	EndGlobalSection
 EndGlobal

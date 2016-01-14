@@ -1,4 +1,4 @@
-﻿namespace Column_to_SQLValues
+﻿namespace Excel_data_to_SQL_Statement
 {
     partial class Form1
     {
@@ -29,25 +29,25 @@
         private void InitializeComponent()
         {
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.button1 = new System.Windows.Forms.Button();
+            this.CopyToClipboardButton = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.PasteFromClipboardButton = new System.Windows.Forms.Button();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // CopyToClipboardButton
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.CopyToClipboardButton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Location = new System.Drawing.Point(280, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(495, 23);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Скопировать в буфер";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.CopyToClipboardButton.Location = new System.Drawing.Point(281, 12);
+            this.CopyToClipboardButton.Name = "CopyToClipboardButton";
+            this.CopyToClipboardButton.Size = new System.Drawing.Size(494, 23);
+            this.CopyToClipboardButton.TabIndex = 2;
+            this.CopyToClipboardButton.Text = "Скопировать в буфер";
+            this.CopyToClipboardButton.UseVisualStyleBackColor = true;
+            this.CopyToClipboardButton.Click += new System.EventHandler(this.CopyToClipboardButton_Click);
             // 
             // textBox1
             // 
@@ -55,21 +55,23 @@
             | System.Windows.Forms.AnchorStyles.Left)));
             this.textBox1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox1.Location = new System.Drawing.Point(12, 45);
+            this.textBox1.MaxLength = 2147483647;
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(262, 305);
             this.textBox1.TabIndex = 3;
+            this.textBox1.WordWrap = false;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // button2
+            // PasteFromClipboardButton
             // 
-            this.button2.Location = new System.Drawing.Point(12, 11);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(262, 23);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "Вставить из буфера";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.PasteFromClipboardButton.Location = new System.Drawing.Point(12, 12);
+            this.PasteFromClipboardButton.Name = "PasteFromClipboardButton";
+            this.PasteFromClipboardButton.Size = new System.Drawing.Size(262, 23);
+            this.PasteFromClipboardButton.TabIndex = 5;
+            this.PasteFromClipboardButton.Text = "Вставить из буфера";
+            this.PasteFromClipboardButton.UseVisualStyleBackColor = true;
+            this.PasteFromClipboardButton.Click += new System.EventHandler(this.PasteFromClipboardButton_Click);
             // 
             // richTextBox1
             // 
@@ -77,7 +79,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.richTextBox1.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.richTextBox1.ForeColor = System.Drawing.Color.Red;
+            this.richTextBox1.ForeColor = System.Drawing.SystemColors.WindowText;
             this.richTextBox1.Location = new System.Drawing.Point(281, 45);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(546, 305);
@@ -105,12 +107,12 @@
             this.ClientSize = new System.Drawing.Size(839, 357);
             this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.richTextBox1);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.PasteFromClipboardButton);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.CopyToClipboardButton);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Excel column to SQL insert";
+            this.Text = "Excel data to SQL Statement";
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -120,9 +122,9 @@
         #endregion
 
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button CopyToClipboardButton;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button PasteFromClipboardButton;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
 

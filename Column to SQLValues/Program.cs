@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Column_to_SQLValues
+namespace Excel_data_to_SQL_Statement
 {
     static class Program
     {
