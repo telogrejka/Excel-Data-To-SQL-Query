@@ -1,0 +1,26 @@
+E:\Projects\VS2013\Column to SQLValues\Column to SQLValues\bin\Debug\Column to SQLValues.exe.config
+E:\Projects\VS2013\Column to SQLValues\Column to SQLValues\bin\Debug\Column to SQLValues.exe
+E:\Projects\VS2013\Column to SQLValues\Column to SQLValues\bin\Debug\Column to SQLValues.pdb
+E:\Projects\VS2013\Column to SQLValues\Column to SQLValues\obj\Debug\Column to SQLValues.csprojResolveAssemblyReference.cache
+E:\Projects\VS2013\Column to SQLValues\Column to SQLValues\obj\Debug\Column_to_SQLValues.Form1.resources
+E:\Projects\VS2013\Column to SQLValues\Column to SQLValues\obj\Debug\Column_to_SQLValues.Properties.Resources.resources
+E:\Projects\VS2013\Column to SQLValues\Column to SQLValues\obj\Debug\Column to SQLValues.csproj.GenerateResource.Cache
+E:\Projects\VS2013\Column to SQLValues\Column to SQLValues\obj\Debug\Column to SQLValues.exe
+E:\Projects\VS2013\Column to SQLValues\Column to SQLValues\obj\Debug\Column to SQLValues.pdb
+E:\Projects\VS2013\Column to SQLValues 2\Column to SQLValues\bin\Debug\Column to SQLValues.exe.config
+E:\Projects\VS2013\Column to SQLValues 2\Column to SQLValues\obj\Debug\Column to SQLValues.exe
+E:\Projects\VS2013\Column to SQLValues 2\Column to SQLValues\obj\Debug\Column to SQLValues.pdb
+E:\Projects\VS2013\Column to SQLValues 2\Column to SQLValues\bin\Debug\Column to SQLValues.exe
+E:\Projects\VS2013\Column to SQLValues 2\Column to SQLValues\bin\Debug\Column to SQLValues.pdb
+E:\Projects\VS2013\Column to SQLValues 2\Column to SQLValues\obj\Debug\Column to SQLValues.csprojResolveAssemblyReference.cache
+E:\Projects\VS2013\Column to SQLValues 2\Column to SQLValues\obj\Debug\Column_to_SQLValues.Form1.resources
+E:\Projects\VS2013\Column to SQLValues 2\Column to SQLValues\obj\Debug\Column_to_SQLValues.Properties.Resources.resources
+E:\Projects\VS2013\Column to SQLValues 2\Column to SQLValues\obj\Debug\Column to SQLValues.csproj.GenerateResource.Cache
+D:\Projects\Column to SQLValues 2\Column to SQLValues\bin\Debug\Column to SQLValues.exe.config
+D:\Projects\Column to SQLValues 2\Column to SQLValues\bin\Debug\Column to SQLValues.exe
+D:\Projects\Column to SQLValues 2\Column to SQLValues\bin\Debug\Column to SQLValues.pdb
+D:\Projects\Column to SQLValues 2\Column to SQLValues\obj\Debug\Column_to_SQLValues.Form1.resources
+D:\Projects\Column to SQLValues 2\Column to SQLValues\obj\Debug\Column_to_SQLValues.Properties.Resources.resources
+D:\Projects\Column to SQLValues 2\Column to SQLValues\obj\Debug\Column to SQLValues.csproj.GenerateResource.Cache
+D:\Projects\Column to SQLValues 2\Column to SQLValues\obj\Debug\Column to SQLValues.exe
+D:\Projects\Column to SQLValues 2\Column to SQLValues\obj\Debug\Column to SQLValues.pdb
