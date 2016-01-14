@@ -13,41 +13,60 @@ namespace Column_to_SQLValues
 
         private void convertText()
         {
-            int valuesInRowCount = Convert.ToInt32(numericUpDown1.Value);
-            if (valuesInRowCount < 1) return;
+            Cursor.Current = Cursors.WaitCursor;
+            Application.DoEvents();
+
+            if (numericUpDown1.Value < 1) 
+                return;
+
             try
             {
+                int linesCount = textBox1.Lines.Count();
+                if (linesCount == 0) 
+                    return;
+                
                 string text = textBox1.Text;
-                int totalRowCount = text.Count(p => p == '\n');
-                if (totalRowCount > valuesInRowCount)
-                {
-                    int row = 0;
-                    for (int i = 0; i < text.Length; i++)
-                    {
-                        if (text[i] == '\n')
-                        {
-                            row++;
-                            if (row % valuesInRowCount == 0)
-                            {
-                                text = text.Insert(i, "\n");
-                                i++;
-                            }
-                        }
-                    }
-                }
+                text = MakeColumns(text, numericUpDown1.Value);
+
                 text = text.Replace(',', '.');
                 text = text.Replace("\t", "', '");
                 text = text.Replace("\r\n", "'), ('");
                 text = text.Insert(0, "('");
                 text = text.Replace(" ('\n", "\n('");
-                text = text.Remove(text.Length - 4, 4);
+
+                if (linesCount > 1)
+                    text = text.Remove(text.Length - 4, 4);
+
                 richTextBox1.Text = text;
 
                 HighLightText();
+                Cursor.Current = Cursors.Default;
             }
             catch
             {
             }
+        }
+
+        private static string MakeColumns(string text, decimal colNumber)
+        {
+            int totalRowCount = text.Count(p => p == '\n');
+            if (totalRowCount > colNumber)
+            {
+                int row = 0;
+                for (int i = 0; i < text.Length; i++)
+                {
+                    if (text[i] == '\n')
+                    {
+                        row++;
+                        if (row % colNumber == 0)
+                        {
+                            text = text.Insert(i, "\n");
+                            i++;
+                        }
+                    }
+                }
+            }
+            return text;
         }
 
         private void HighLightText()

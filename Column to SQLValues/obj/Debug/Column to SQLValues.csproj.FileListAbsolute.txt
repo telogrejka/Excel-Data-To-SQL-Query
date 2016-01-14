@@ -24,3 +24,4 @@ D:\Projects\Column to SQLValues 2\Column to SQLValues\obj\Debug\Column_to_SQLVal
 D:\Projects\Column to SQLValues 2\Column to SQLValues\obj\Debug\Column to SQLValues.csproj.GenerateResource.Cache
 D:\Projects\Column to SQLValues 2\Column to SQLValues\obj\Debug\Column to SQLValues.exe
 D:\Projects\Column to SQLValues 2\Column to SQLValues\obj\Debug\Column to SQLValues.pdb
+D:\Projects\Column to SQLValues 2\Column to SQLValues\obj\Debug\Column to SQLValues.csprojResolveAssemblyReference.cache
