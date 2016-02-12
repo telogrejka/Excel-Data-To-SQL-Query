@@ -58,9 +58,9 @@
             this.textBox1.MaxLength = 2147483647;
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
+            this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.textBox1.Size = new System.Drawing.Size(262, 305);
-            this.textBox1.TabIndex = 3;
-            this.textBox1.WordWrap = false;
+            this.textBox1.TabIndex = 0;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // PasteFromClipboardButton
@@ -68,7 +68,7 @@
             this.PasteFromClipboardButton.Location = new System.Drawing.Point(12, 12);
             this.PasteFromClipboardButton.Name = "PasteFromClipboardButton";
             this.PasteFromClipboardButton.Size = new System.Drawing.Size(262, 23);
-            this.PasteFromClipboardButton.TabIndex = 5;
+            this.PasteFromClipboardButton.TabIndex = 1;
             this.PasteFromClipboardButton.Text = "Вставить из буфера";
             this.PasteFromClipboardButton.UseVisualStyleBackColor = true;
             this.PasteFromClipboardButton.Click += new System.EventHandler(this.PasteFromClipboardButton_Click);
@@ -83,7 +83,7 @@
             this.richTextBox1.Location = new System.Drawing.Point(281, 45);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(546, 305);
-            this.richTextBox1.TabIndex = 6;
+            this.richTextBox1.TabIndex = 3;
             this.richTextBox1.Text = "";
             // 
             // numericUpDown1
@@ -92,7 +92,7 @@
             this.numericUpDown1.Location = new System.Drawing.Point(781, 14);
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(46, 20);
-            this.numericUpDown1.TabIndex = 7;
+            this.numericUpDown1.TabIndex = 4;
             this.numericUpDown1.Value = new decimal(new int[] {
             2,
             0,

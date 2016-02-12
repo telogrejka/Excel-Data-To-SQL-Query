@@ -14,7 +14,7 @@ namespace Excel_data_to_SQL_Statement
             InitializeComponent();
         }
 
-        private void convertText()
+        private void convertText(string textFromClipBoard)
         {
             Cursor.Current = Cursors.WaitCursor;
             Application.DoEvents();
@@ -22,10 +22,10 @@ namespace Excel_data_to_SQL_Statement
             try
             {
                 int linesCount = textBox1.Lines.Count();
-                if (linesCount == 0) 
+                if (linesCount == 0)
                     return;
 
-                StringBuilder text = new StringBuilder(MakeColumns(textBox1.Text, numericUpDown1.Value));
+                StringBuilder text = new StringBuilder(MakeColumns(textFromClipBoard, numericUpDown1.Value));
                 text = text.Replace(',', '.');
                 text = text.Replace("\t", "', '");
                 text = text.Replace("\r\n", "'), ('");
@@ -36,7 +36,6 @@ namespace Excel_data_to_SQL_Statement
                     text = text.Remove(text.Length - 4, 4);
 
                 richTextBox1.Text = text.ToString();
-
                 //HighLightText(); //сильно лагает на больших данных
                 Cursor.Current = Cursors.Default;
             }
@@ -89,7 +88,7 @@ namespace Excel_data_to_SQL_Statement
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            convertText();
+            convertText(textBox1.Text);
         }
 
         private void CopyToClipboardButton_Click(object sender, EventArgs e)
@@ -108,7 +107,7 @@ namespace Excel_data_to_SQL_Statement
             {
                 numericUpDown1.Value = 1;
             }
-            convertText();
+            convertText(textBox1.Text);
         }
     }
 }
